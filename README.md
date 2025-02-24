@@ -22,6 +22,7 @@ Using computer vision techniques, I will analyze and gather quantitative measure
 For possible future research, this project may investigate using PINNs, finding solutions and calculations for the Navier Stokes Equations in Hurricane Large Eddy Simulations which are computationally very expensive.
 
 ## Semester project Part 2 Datasets
+## Initiative 1
 ### Source
 A large number of dropsonde measurements were taken from the National Oceanic and Atmospheric Administration's (NOAA) “Dropsonde Data Archive.”  at https://www.aoml.noaa.gov/hrd/data_sub/dropsonde.html. 
 ### Number of distinct objects/subjects 
