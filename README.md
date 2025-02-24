@@ -21,4 +21,22 @@ Using computer vision techniques, I will analyze and gather quantitative measure
 
 For possible future research, this project may investigate using PINNs, finding solutions and calculations for the Navier Stokes Equations in Hurricane Large Eddy Simulations which are computationally very expensive.
 
-
+## Semester project Part 2 Datasets
+### Source
+A large number of dropsonde measurements were taken from the National Oceanic and Atmospheric Administration's (NOAA) “Dropsonde Data Archive.”  at https://www.aoml.noaa.gov/hrd/data_sub/dropsonde.html. 
+### Number of distinct objects/subjects 
+There are approximately 22000 drops that each have approximately 1000 measurements (taken at 2 to 4 Hz) of height, windspeed, relative humidity, pressure, among other variables. There is also a variety of metadata about the context of the drop (which hurricane it was dropped, the intensity at that time, the distance to the center of the hurricane).
+### The Train and Validation Subsets
+I will likely take a 60% subset for the train from each of category 3, 4, and 5 hurricanes as this is a major aspect of the hurricane intensity and its correlation to various other aspects. Similarly, the 20% for validation will be taken from these categories.
+### Characterization of samples
+Each measurement has a respective accuracy (height down to the meter, pressure to the tenth of a milibar, windspeed to the hundreth of meters per second). Note that if a measurement was not taken at that time, it is represented with a -999 which is converted to a NULL value in post processing.
+### Sample of data
+IX      t (s)  P (mb)    T (C)    RH (%)  Z (m)   WD    WS (m/s)   U (m/s)   V (m/s)  NS  WZ (m/s)  ZW (m)   FP  FT  FH  FW    LAT (N)   LON (E)
+0072   17.75  -999.0   -999.00   -999.0    -999    55     8.79     -7.20     -5.04    10  -999.0    -999     0   0   0   0    -999.000  -999.000
+0073   18.00   502.7     -3.87     57.8    5843    55     8.75     -7.20     -4.97    10    -0.9    5843     0   0   0   0      16.073   -55.990
+0074   18.25  -999.0   -999.00   -999.0    -999    56     8.72     -7.21     -4.91    10  -999.0    -999     0   0   0   0    -999.000  -999.000
+0075   18.50   503.2     -3.84     58.9    5836    56     8.70     -7.23     -4.84    10    -0.9    5836     0   0   0   0      16.073   -55.990
+0076   18.75  -999.0   -999.00   -999.0    -999  -999  -999.00   -999.00   -999.00    10  -999.0    -999     0   0   0   0    -999.000  -999.000
+0077   19.00   503.6     -3.82     60.0    5829  -999  -999.00   -999.00   -999.00    10    -0.9    5829     0   0   0   0      16.073   -55.990
+0078   19.25  -999.0   -999.00   -999.0    -999    58     8.64     -7.29     -4.63    10  -999.0    -999     0   0   0   0    -999.000  -999.000
+0079   19.50   504.1     -3.80     61.2    5822  -999  -999.00   -999.00   -999.00    10    -0.9    5822     0   0   0   0      16.073   -55.991
