@@ -1,7 +1,7 @@
 # NeuralNetwork_Hurricanes
 A Neural Network simulating the aggregated measurements from various hurricanes, specifically for dropsondes, saildrones, and NOAA best track data.
 
-## Semester project Part 1 Conceptual design
+## Semester project Part 1: Conceptual design
 ## Project Name: Neural Networks Characterizing Hurricanes
 
 The goal of this project is to use the tools of Deep Neural Networks in order to fit and predict certain measured values taken from hurricane measurement instruments. The project will use data taken from three open data sources: the HURDAT 2 Hurricane Best Track Database (https://www.aoml.noaa.gov/hrd/hurdat/Data_Storm.html),  the Hurricane Research Division Dropsonde Database (https://www.aoml.noaa.gov/ftp/pub/hrd/data/dropsonde/), the and the (https://data.pmel.noaa.gov/generic/erddap/) The Pacific Marine Environmental Laboratory's ERDDAP Data of Saildrones located near hurricanes, (hereafter named HURDAT2, Dropsondes, and Saildrones respectively). The relevant data have been put into a Structured Query Language (SQL) database – specifically a SQLite3 format – so that it can be pulled into Pytorch easily. 
@@ -21,7 +21,7 @@ Using computer vision techniques, I will analyze and gather quantitative measure
 
 For possible future research, this project may investigate using PINNs, finding solutions and calculations for the Navier Stokes Equations in Hurricane Large Eddy Simulations which are computationally very expensive.
 
-## Semester project Part 2 Datasets
+## Semester project Part 2: Datasets
 ## Initiative 1
 ### Source
 A large number of dropsonde measurements were taken from the National Oceanic and Atmospheric Administration's (NOAA) “Dropsonde Data Archive.”  at https://www.aoml.noaa.gov/hrd/data_sub/dropsonde.html. 
@@ -41,3 +41,8 @@ IX      t (s)  P (mb)    T (C)    RH (%)  Z (m)   WD    WS (m/s)   U (m/s)   V (
 0077   19.00   503.6     -3.82     60.0    5829  -999  -999.00   -999.00   -999.00    10    -0.9    5829     0   0   0   0      16.073   -55.990
 0078   19.25  -999.0   -999.00   -999.0    -999    58     8.64     -7.29     -4.63    10  -999.0    -999     0   0   0   0    -999.000  -999.000
 0079   19.50   504.1     -3.80     61.2    5822  -999  -999.00   -999.00   -999.00    10    -0.9    5822     0   0   0   0      16.073   -55.991
+
+## Semester project Part 3: First update
+
+Writen by ChatGPT to describe how the LSTM was created:
+This script builds and trains an LSTM (Long Short-Term Memory) neural network using PyTorch to predict atmospheric pressure (p_mb) based on sequential weather data from a CSV file (data_try_1.csv). It first loads the data, fills missing values, and normalizes key features (p_mb, t_c, rh_percent, z_m, ws_m_s) using MinMax scaling. The script then groups data by header_id, extracts time-series sequences, and prepares them as input for the LSTM. The model consists of two LSTM layers and a fully connected layer to predict the next pressure value in the sequence. It trains the model using Mean Squared Error (MSE) loss and the Adam optimizer, logging progress every 10 epochs. After training, the script makes a sample prediction and converts it back to the original scale. Throughout execution, key steps and results are logged to both the console and a log file (training_log.txt) for easy debugging and monitoring.
