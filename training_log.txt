@@ -1,0 +1,59 @@
+2025-03-06 00:56:01,632 - Loading data from data_try_1.csv...
+2025-03-06 00:56:09,266 - Filling missing values...
+2025-03-06 00:56:10,335 - Preparing sequences for LSTM...
+2025-03-06 00:56:51,596 - Total sequences prepared: 18736848
+2025-03-06 00:56:52,428 - Starting training...
+2025-03-06 00:57:41,111 - Loading data from data_try_1.csv...
+2025-03-06 00:57:51,348 - Filling missing values...
+2025-03-06 00:57:55,676 - Preparing sequences for LSTM...
+2025-03-06 00:59:42,707 - Total sequences prepared: 18736848
+2025-03-06 00:59:48,302 - Starting training...
+2025-03-06 01:48:20,290 - Epoch 1, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 02:26:18,594 - Epoch 2, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 03:04:02,453 - Epoch 3, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 03:42:24,486 - Epoch 4, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 04:20:32,194 - Epoch 5, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 04:59:13,268 - Epoch 6, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 05:38:19,141 - Epoch 7, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 06:17:07,719 - Epoch 8, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 06:55:43,163 - Epoch 9, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 07:33:40,141 - Epoch 10, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 08:10:56,187 - Epoch 11, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 08:47:02,079 - Epoch 12, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 09:23:25,170 - Epoch 13, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 09:59:10,648 - Epoch 14, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 10:34:30,898 - Epoch 15, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 11:10:21,331 - Epoch 16, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 11:45:49,507 - Epoch 17, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 12:21:34,448 - Epoch 18, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 12:57:11,350 - Epoch 19, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 13:33:02,783 - Epoch 20, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 14:08:23,354 - Epoch 21, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 14:43:44,776 - Epoch 22, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 15:19:19,876 - Epoch 23, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 15:54:28,971 - Epoch 24, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 16:29:06,226 - Epoch 25, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 17:04:48,970 - Epoch 26, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 17:40:02,180 - Epoch 27, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 18:15:28,379 - Epoch 28, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 18:51:30,118 - Epoch 29, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 19:26:52,686 - Epoch 30, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 20:02:41,352 - Epoch 31, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 20:39:57,023 - Epoch 32, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 21:16:02,266 - Epoch 33, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 21:53:08,207 - Epoch 34, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 22:29:31,673 - Epoch 35, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 23:06:20,727 - Epoch 36, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-06 23:42:15,748 - Epoch 37, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-07 00:18:59,334 - Epoch 38, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-07 00:55:23,496 - Epoch 39, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-07 01:31:43,720 - Epoch 40, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-07 02:06:57,639 - Epoch 41, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-07 02:43:23,237 - Epoch 42, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-07 03:18:46,734 - Epoch 43, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-07 03:55:21,863 - Epoch 44, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-07 04:30:45,997 - Epoch 45, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-07 05:06:01,835 - Epoch 46, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-07 05:42:02,695 - Epoch 47, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-07 06:17:12,155 - Epoch 48, Train Loss: 0.000000, Val Loss: 0.000000
+2025-03-07 06:52:09,792 - Epoch 49, Train Loss: 0.000000, Val Loss: 0.000000
