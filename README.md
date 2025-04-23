@@ -55,3 +55,12 @@ Here are the results of the first run on the CRC
 2025-03-06 01:48:20,290 - Epoch 1, Train Loss: 0.000000, Val Loss: 0.000000
 2025-03-07 06:17:12,155 - Epoch 48, Train Loss: 0.000000, Val Loss: 0.000000
 Clearly, I need to debug and see why the model is not providing any output.  This will be the start of next phase of this project.
+
+## Semester project Part 4: Second update
+
+Your task: push to your project GitHub repo your first solution designed and evaluated with train and validation partitions of your dataset. This should include:
+
+Source codes with instructions how to run your trained neural network on a single validation sample (please attach it to your solution). We should be able to run your programs without any edits -- please double check before submission that the codes are complete and all the package requirements are listed (3 points).
+A report (as a readme in GitHub, 1000-2000 words) with:
+A classification accuracy achieved on the training and validation sets. That is, how many samples were classified correctly and how many of them were classified incorrectly (It is better to provide a percentage instead of numbers). Select the performance metrics that best suit their given problem (for instance, Precision-Recall, f-measure, plot ROCs, ECE for calibration, perceptual/realism assessment in case of generative models, etc.) and justify the use of the evaluation method (2 points);
+A short commentary related to the observed accuracy and ideas for improvements (to be implemented in the final solution). For instance, if you see almost perfect accuracy on the training set, and way worse on the validation set, what does it mean? Is it good? If not, what do you think you could do to improve the generalization capabilities of your neural network? (5 points)
