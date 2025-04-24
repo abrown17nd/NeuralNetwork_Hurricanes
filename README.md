@@ -68,23 +68,35 @@ The current setup was trained for 50 epochs for each of the four chosen sequence
 As a note, future training will include varying the hidden layer size as well as the learning rates, while saving the best models for each run defined by having a minimum training loss. Also, graphs comparing the learning of the various model runs will be displayed.
 ### Classification and simulation accuracy computation
 For assessing the model accuracy, I used a training set and a validation set split of 80% to 20% and a Mean Squared Error (MSE) comparison. This is a reasonable computation as the model should be predicting close to the next sequence values and calculating the MSE for this data set makes sense in terms of how close the predicted values  are to the actual values. The results, in text, of the different sequence length models are as follows:
+
 --- Processing sequence length: 5 ---
 Train loss (epoch 50): 0.004653
 Validation loss (epoch 50): 0.005211
+
 --- Processing sequence length: 10 ---
 Train loss (epoch 50): 0.004697
 Validation loss (epoch 50): 0.005363
+
 --- Processing sequence length: 20 ---
 Train loss (epoch 50): 0.004931
 Validation loss (epoch 50): 0.005494
+
 This can also be seen graphically in the file epoch_50_loss_comparison.jpg.
+
 ### Classification and simulation accuracy computation
 First, I will describe the general qualitative results of the model output as the project developed. A variety of setbacks and learning moments occurred that helped to improve the accuracy of the model. The first was the times that various normalizing and de-normalizing the dataset were needed. A few of the original graphs were comparing the actual data values with the model output which was still in a normed mode.  Next, since for each given sequence length the model uses the actual starting sequence, the model needs to use those values as the starting values when plotted.  After these changes were made, the simulated dropsonde windspeed measurements much more closely resembled the given dropsonde windspeed profiles in the windspeed variation profiles.  
+
 Currently, however, there are two major issues that should be resolved before the final project update.  The first is that the model appears to have been trained “bottom up”, that is, the starting sequences are at the lowest height bins, starting from a z_m of 0.  In reality, the dropsondes are falling from the sky, and so the bins from the top should be the “starting sequences”.  Next, for the output dropsonde measurement predictions, the subsequent model values appear to be shifted from the starting values by a fairly large factor instead of roughly staying along with the actual sequence.  
+
 Looking at the loss functions, the results seem to be fairly good by that measurement alone for all of the sequence lengths. This is confirmed intuitively by looking at the sample outputs and how they generally capture the shape of the actual data.
+
 There are still a few things that I am not sure about and that I want to resolve before the final submission of this project. 
+
 The first will be as stated above in regards to which direction the sequences are generated.  This may make a large difference in how closely the data are aligned and relate to the real world situation. 
+
 Also, I am curious if using more values from above 200 meters would be useful to better capture variability. In the real use of the data in my research, we take an average of the first 500 meters in order to split the dropsondes into bins which we then use to calculate correlation coefficients. We calculate these coefficients using only the wind speeds from 200 meters and below which is why I for the purposes of proof of concept, I trained the model using this data. 
 Next, I am not sure if the model is accurately generating the next sequences and that I am appending them correctly with the seed values from the actual dropsonde measurements.  This should be a relatively simple debugging issue that I should be able to ensure before the final tests (this may explain the significant difference after the seed values if the model output is just being started in the wrong place – a couple of my earlier results had this problem because I was appending the first five values for each regardless of the actual sequence length).
+
 Finally, I am interested in seeing if modifying the loss function to more accurately calculate the cost of running the sequence all the way through would give better results. Right now, the loss function is only generated on how well it predicts the next value. If there is a way I could incorporate a cost related to the entire resulting predicted sequence, then the RNN might have to learn better the overall shape and not just the next value.
+
 Overall, significant progress in accomplishing my task was done – starting from a model that did not give any output and had exploding gradients to now one that gives simulated dropsondes that look fairly realistic, I would say that this project is on the right track of achieving the goal stated at the outset.
