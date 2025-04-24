@@ -69,19 +69,24 @@ As a note, future training will include varying the hidden layer size as well as
 ### Classification and simulation accuracy computation
 For assessing the model accuracy, I used a training set and a validation set split of 80% to 20% and a Mean Squared Error (MSE) comparison. This is a reasonable computation as the model should be predicting close to the next sequence values and calculating the MSE for this data set makes sense in terms of how close the predicted values  are to the actual values. The results, in text, of the different sequence length models are as follows:
 
---- Processing sequence length: 5 ---
-Train loss (epoch 50): 0.004653
-Validation loss (epoch 50): 0.005211
+--- Sequence length: 5 ---
+Train loss: 0.004653
+Validation loss: 0.005211
 
---- Processing sequence length: 10 ---
-Train loss (epoch 50): 0.004697
-Validation loss (epoch 50): 0.005363
+--- Sequence length: 10 ---
+Train loss: 0.004697
+Validation loss: 0.005363
 
---- Processing sequence length: 20 ---
-Train loss (epoch 50): 0.004931
-Validation loss (epoch 50): 0.005494
+--- Sequence length: 20 ---
+Train loss: 0.004931
+Validation loss: 0.005494
 
-This can also be seen graphically in the file epoch_50_loss_comparison.jpg.
+--- Sequence length: 25 ---
+Train loss: 0.005258
+Validation loss: 0.005641
+
+These values are all on the same order of magnitude and suggest a good fitting of the model. However, as discussed at the end of this section, there may be a better way to define the cost function that helps train the network more accurately given the desired output.
+The results can also be seen graphically in the file epoch_50_loss_comparison.jpg. 
 
 ### Classification and simulation accuracy computation
 First, I will describe the general qualitative results of the model output as the project developed. A variety of setbacks and learning moments occurred that helped to improve the accuracy of the model. The first was the times that various normalizing and de-normalizing the dataset were needed. A few of the original graphs were comparing the actual data values with the model output which was still in a normed mode.  Next, since for each given sequence length the model uses the actual starting sequence, the model needs to use those values as the starting values when plotted.  After these changes were made, the simulated dropsonde windspeed measurements much more closely resembled the given dropsonde windspeed profiles in the windspeed variation profiles.  
