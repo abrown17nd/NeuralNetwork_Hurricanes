@@ -12,3 +12,59 @@
 2025-04-24 10:56:14,189 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_25/lstm_model_epoch_50.pth
 2025-04-24 10:56:14,674 - INFO - Inverse scaling complete. Ready for plotting.
 2025-04-24 10:56:15,188 - INFO - Generated sequence plotted.
+2025-04-24 11:06:50,342 - INFO - Using device: cpu
+2025-04-24 11:06:50,937 - INFO - Dataset loaded with 788700 rows.
+2025-04-24 11:06:50,953 - INFO - Unique header_id values: 7887
+2025-04-24 11:06:51,159 - INFO - Feature normalization complete.
+2025-04-24 11:08:23,092 - INFO - Model initialized. Ready for programming
+2025-04-24 11:08:23,911 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_5/lstm_model_epoch_50.pth
+2025-04-24 11:08:24,248 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 11:08:24,252 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_10/lstm_model_epoch_50.pth
+2025-04-24 11:08:24,550 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 11:08:24,554 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_20/lstm_model_epoch_50.pth
+2025-04-24 11:08:24,869 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 11:08:24,873 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_25/lstm_model_epoch_50.pth
+2025-04-24 11:08:25,155 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 11:08:25,495 - INFO - Generated sequence plotted.
+2025-04-24 11:09:18,428 - INFO - Using device: cpu
+2025-04-24 11:09:19,001 - INFO - Dataset loaded with 788700 rows.
+2025-04-24 11:09:19,016 - INFO - Unique header_id values: 7887
+2025-04-24 11:09:19,189 - INFO - Feature normalization complete.
+2025-04-24 11:10:56,504 - INFO - Model initialized. Ready for programming
+2025-04-24 11:10:57,262 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_5/lstm_model_epoch_50.pth
+2025-04-24 11:10:57,602 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 11:10:57,607 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_10/lstm_model_epoch_50.pth
+2025-04-24 11:10:57,895 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 11:10:57,900 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_20/lstm_model_epoch_50.pth
+2025-04-24 11:10:58,199 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 11:10:58,204 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_25/lstm_model_epoch_50.pth
+2025-04-24 11:10:58,530 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 11:10:58,814 - INFO - Generated sequence plotted.
+2025-04-24 11:11:32,472 - INFO - Using device: cpu
+2025-04-24 11:11:33,051 - INFO - Dataset loaded with 788700 rows.
+2025-04-24 11:11:33,069 - INFO - Unique header_id values: 7887
+2025-04-24 11:11:33,247 - INFO - Feature normalization complete.
+2025-04-24 11:12:45,529 - INFO - Model initialized. Ready for programming
+2025-04-24 11:12:46,288 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_5/lstm_model_epoch_50.pth
+2025-04-24 11:12:46,726 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 11:12:46,731 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_10/lstm_model_epoch_50.pth
+2025-04-24 11:12:47,098 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 11:12:47,103 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_20/lstm_model_epoch_50.pth
+2025-04-24 11:12:47,566 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 11:12:47,570 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_25/lstm_model_epoch_50.pth
+2025-04-24 11:12:47,856 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 11:12:48,185 - INFO - Generated sequence plotted.
+2025-04-24 11:13:07,722 - INFO - Using device: cpu
+2025-04-24 11:13:08,304 - INFO - Dataset loaded with 788700 rows.
+2025-04-24 11:13:08,320 - INFO - Unique header_id values: 7887
+2025-04-24 11:13:08,498 - INFO - Feature normalization complete.
+2025-04-24 11:15:42,048 - INFO - Model initialized. Ready for programming
+2025-04-24 11:15:43,053 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_5/lstm_model_epoch_50.pth
+2025-04-24 11:15:43,527 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 11:15:43,536 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_10/lstm_model_epoch_50.pth
+2025-04-24 11:15:44,082 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 11:15:44,088 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_20/lstm_model_epoch_50.pth
+2025-04-24 11:15:44,949 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 11:15:44,962 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_25/lstm_model_epoch_50.pth
+2025-04-24 11:15:45,784 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 11:15:46,237 - INFO - Generated sequence plotted.

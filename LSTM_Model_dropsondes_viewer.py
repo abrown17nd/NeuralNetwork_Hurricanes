@@ -160,7 +160,7 @@ for sequence_length in sequence_lengths:
 
   with torch.no_grad():
       # print(initial_sequence_windspeed)
-      for i in range(5):
+      for i in range(sequence_length):
         generated_ws.append(initial_sequence_windspeed[i])
       # generated_ws.append(initial_sequence_windspeed[:sequence_length])
 
@@ -216,6 +216,6 @@ plt.legend()
 plt.title(f"Generated Sequence vs. Actual Data for Header ID {random_header_id} for sequence length {sequence_length}")
 
 print_and_log("Generated sequence plotted.")
-plt.show()
 plt.savefig(f"sequence_prediction_graphs/sequence_prediction_header_{random_header_id}.jpg")
+plt.show()
 
