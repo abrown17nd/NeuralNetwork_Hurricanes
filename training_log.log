@@ -1,0 +1,14 @@
+2025-04-24 10:53:54,918 - INFO - Using device: cpu
+2025-04-24 10:53:55,592 - INFO - Dataset loaded with 788700 rows.
+2025-04-24 10:53:55,622 - INFO - Unique header_id values: 7887
+2025-04-24 10:53:55,866 - INFO - Feature normalization complete.
+2025-04-24 10:56:11,658 - INFO - Model initialized. Ready for programming
+2025-04-24 10:56:12,681 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_5/lstm_model_epoch_50.pth
+2025-04-24 10:56:13,153 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 10:56:13,169 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_10/lstm_model_epoch_50.pth
+2025-04-24 10:56:13,630 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 10:56:13,636 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_20/lstm_model_epoch_50.pth
+2025-04-24 10:56:14,179 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 10:56:14,189 - INFO - Model loaded from MultipleRuns/attempt_2/seq_len_25/lstm_model_epoch_50.pth
+2025-04-24 10:56:14,674 - INFO - Inverse scaling complete. Ready for plotting.
+2025-04-24 10:56:15,188 - INFO - Generated sequence plotted.
