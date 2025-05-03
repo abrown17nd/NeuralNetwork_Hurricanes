@@ -29,7 +29,7 @@ with open("best_model_per_config.json", "r") as f:
     model_configs = json.load(f)
 
 # Load dataset
-df_original = pd.read_csv("/scratch365/abrown17/NeuralNetworks/Project/data_try_3.csv")
+df_original = pd.read_csv("data_try_3.csv")
 
 # Feature columns and scalers
 feature_columns = ["p_mb", "t_c", "rh_percent", "z_m_10_meter_bin", "ws_m_s"]
