@@ -1,0 +1,130 @@
+{
+  "seq_10_hidden_64_lr_0.001": {
+    "sequence_length": 10,
+    "hidden_size": 64,
+    "learning_rate": 0.001,
+    "epoch": 50,
+    "best_train_loss": 0.20267032267535312,
+    "model_path": "lstm_model_hidden_64_lr_0.001_seq_len_10_epoch_50.pth"
+  },
+  "seq_5_hidden_8_lr_0.001": {
+    "sequence_length": 5,
+    "hidden_size": 8,
+    "learning_rate": 0.001,
+    "epoch": 50,
+    "best_train_loss": 0.4261091100336127,
+    "model_path": "lstm_model_hidden_8_lr_0.001_seq_len_5_epoch_50.pth"
+  },
+  "seq_10_hidden_8_lr_0.001": {
+    "sequence_length": 10,
+    "hidden_size": 8,
+    "learning_rate": 0.001,
+    "epoch": 50,
+    "best_train_loss": 0.4143621782589842,
+    "model_path": "lstm_model_hidden_8_lr_0.001_seq_len_10_epoch_50.pth"
+  },
+  "seq_20_hidden_8_lr_0.001": {
+    "sequence_length": 20,
+    "hidden_size": 8,
+    "learning_rate": 0.001,
+    "epoch": 50,
+    "best_train_loss": 0.4038553588263985,
+    "model_path": "lstm_model_hidden_8_lr_0.001_seq_len_20_epoch_50.pth"
+  },
+  "seq_25_hidden_8_lr_0.001": {
+    "sequence_length": 25,
+    "hidden_size": 8,
+    "learning_rate": 0.001,
+    "epoch": 49,
+    "best_train_loss": 0.40048460748589043,
+    "model_path": "lstm_model_hidden_8_lr_0.001_seq_len_25_epoch_49.pth"
+  },
+  "seq_5_hidden_16_lr_0.001": {
+    "sequence_length": 5,
+    "hidden_size": 16,
+    "learning_rate": 0.001,
+    "epoch": 50,
+    "best_train_loss": 0.35920350573834164,
+    "model_path": "lstm_model_hidden_16_lr_0.001_seq_len_5_epoch_50.pth"
+  },
+  "seq_10_hidden_16_lr_0.001": {
+    "sequence_length": 10,
+    "hidden_size": 16,
+    "learning_rate": 0.001,
+    "epoch": 49,
+    "best_train_loss": 0.3530581088757091,
+    "model_path": "lstm_model_hidden_16_lr_0.001_seq_len_10_epoch_49.pth"
+  },
+  "seq_20_hidden_16_lr_0.001": {
+    "sequence_length": 20,
+    "hidden_size": 16,
+    "learning_rate": 0.001,
+    "epoch": 50,
+    "best_train_loss": 0.34548210433700627,
+    "model_path": "lstm_model_hidden_16_lr_0.001_seq_len_20_epoch_50.pth"
+  },
+  "seq_25_hidden_16_lr_0.001": {
+    "sequence_length": 25,
+    "hidden_size": 16,
+    "learning_rate": 0.001,
+    "epoch": 49,
+    "best_train_loss": 0.3246292402229455,
+    "model_path": "lstm_model_hidden_16_lr_0.001_seq_len_25_epoch_49.pth"
+  },
+  "seq_5_hidden_32_lr_0.001": {
+    "sequence_length": 5,
+    "hidden_size": 32,
+    "learning_rate": 0.001,
+    "epoch": 50,
+    "best_train_loss": 0.28492363614222244,
+    "model_path": "lstm_model_hidden_32_lr_0.001_seq_len_5_epoch_50.pth"
+  },
+  "seq_10_hidden_32_lr_0.001": {
+    "sequence_length": 10,
+    "hidden_size": 32,
+    "learning_rate": 0.001,
+    "epoch": 50,
+    "best_train_loss": 0.2850863851330235,
+    "model_path": "lstm_model_hidden_32_lr_0.001_seq_len_10_epoch_50.pth"
+  },
+  "seq_20_hidden_32_lr_0.001": {
+    "sequence_length": 20,
+    "hidden_size": 32,
+    "learning_rate": 0.001,
+    "epoch": 48,
+    "best_train_loss": 0.26182634332667093,
+    "model_path": "lstm_model_hidden_32_lr_0.001_seq_len_20_epoch_48.pth"
+  },
+  "seq_25_hidden_32_lr_0.001": {
+    "sequence_length": 25,
+    "hidden_size": 32,
+    "learning_rate": 0.001,
+    "epoch": 50,
+    "best_train_loss": 0.24197821425434518,
+    "model_path": "lstm_model_hidden_32_lr_0.001_seq_len_25_epoch_50.pth"
+  },
+  "seq_5_hidden_64_lr_0.001": {
+    "sequence_length": 5,
+    "hidden_size": 64,
+    "learning_rate": 0.001,
+    "epoch": 50,
+    "best_train_loss": 0.2182875922484382,
+    "model_path": "lstm_model_hidden_64_lr_0.001_seq_len_5_epoch_50.pth"
+  },
+  "seq_20_hidden_64_lr_0.001": {
+    "sequence_length": 20,
+    "hidden_size": 64,
+    "learning_rate": 0.001,
+    "epoch": 50,
+    "best_train_loss": 0.18249683388072035,
+    "model_path": "lstm_model_hidden_64_lr_0.001_seq_len_20_epoch_50.pth"
+  },
+  "seq_25_hidden_64_lr_0.001": {
+    "sequence_length": 25,
+    "hidden_size": 64,
+    "learning_rate": 0.001,
+    "epoch": 50,
+    "best_train_loss": 0.17084522692710644,
+    "model_path": "lstm_model_hidden_64_lr_0.001_seq_len_25_epoch_50.pth"
+  }
+}
