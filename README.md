@@ -153,6 +153,7 @@ I then trained the models and (for ease of modifying the code), ran the resultin
 |     64      |       10         | 0.562972  |
 |     64      |       20         | 0.554225  |
 |     64      |       25         | 0.515376  |
+
 It was also interesting how much the model error blew up over time (suggesting major overfitting).
 ### Analysis of data and future implications
  While the validation and test data losses were similar, the actual outputs can be quite incorrect as seen in some of the examples that are printed and stored in the sequence prediction graphs.  Some matched quite well, and some were significantly different with a large jump from the first few starting values.  This is reasonable given how the data could fall in line with the other samples. In future work, I could separate out and normalize differently based on when the data is being taken. Also, I did not have time to implement a loss function that tracked the performance of the whole model compared to the original, and not just the next step. This could have helped my model more accurately adapt to the data and make better predictions on the test data.
