@@ -105,3 +105,53 @@ Next, I am not sure if the model is accurately generating the next sequences and
 Finally, I am interested in seeing if modifying the loss function to more accurately calculate the cost of running the sequence all the way through would give better results. Right now, the loss function is only generated on how well it predicts the next value. If there is a way I could incorporate a cost related to the entire resulting predicted sequence, then the RNN might have to learn better the overall shape and not just the next value.
 
 Overall, significant progress in accomplishing my task was done – starting from a model that did not give any output and had exploding gradients to now one that gives simulated dropsondes that look fairly realistic, I would say that this project is on the right track of achieving the goal stated at the outset.
+
+## Semester project Part 5: Final update
+### Instructions for running trained NN
+The following is the (currently) final results of training a Long-Short-Term-Memory Recurrent Neural Network (LSTM RNN) on the dropsonde data described above. 
+In general, the model takes in a sample sequence start (defined by the trained sequence length) and loops through generating the next values to “predict” the wind speed values of the simulated drop. This is to create a view of a simulated drop that is predicted by the model.  In the previous version, the model was trained “bottom up” (because the data was fed into the network in an ascending manner). In this attempt, the data fed into the network was sorted descending in order to simulate the starting conditions of the physical situation being emulated – the dropsonde is released from a plane and falls to the sea surface taking measurements. 
+Improvements to this training set of the model include using a variety of hidden layer sizes: hidden_sizes = [8, 16, 32, 64] in addition to the sequence lengths: sequence_lengths = [5, 10, 20, 25], giving 16 different best models.
+To view the results of this training, run the LSTM_Model_dropsondes_viewer.py file which will create output from a random dropsonde header using the 16 models. 
+A few are already run in the sequence_prediction_graphs folder for attempt 6 at training the model. One (labeled good) is especially close at predicting the values.
+### Test data base and results
+After discussion with Adam, I decided to take the 10th epoch for each model as the models may have been overfitting after that. The best model by loss function amount is saved in the original file. This was chosen based on when the models more or less level out.
+To assess the functioning of the model, due to project organization limitations at this point, I trained the model as described in class, first pulling aside 20% of the data to a side space, and then doing 80% of the remaining for the training and 20% for the validation.  I then trained the models and (for ease of modifying the code), ran the resulting model on the test data. The results  are plotted in test_losses_at_each_step.png in the result_analyis. As can be seen there, the losses increase over time, to somewhere around 0.55 to 0.7 depending on the model. At epoch 10, the following values were achieved
+hidden_size  sequence_length  val_loss
+           8                5  0.511715
+           8               10  0.514567
+           8               20  0.501905
+           8               25  0.497022
+          16                5  0.515176
+          16               10  0.507705
+          16               20  0.508266
+          16               25  0.522781
+          32                5  0.554142
+          32               10  0.535757
+          32               20  0.543974
+          32               25  0.524005
+          64                5  0.574050
+          64               10  0.541613
+          64               10  0.562972
+          64               20  0.554225
+          64               25  0.515376
+hidden_size  sequence_length  test_loss
+           8                5   0.511715
+           8               10   0.514567
+           8               20   0.501905
+           8               25   0.497022
+          16                5   0.515176
+          16               10   0.507705
+          16               20   0.508266
+          16               25   0.522781
+          32                5   0.554142
+          32               10   0.535757
+          32               20   0.543974
+          32               25   0.524005
+          64                5   0.574050
+          64               10   0.541613
+          64               10   0.562972
+          64               20   0.554225
+          64               25   0.515376
+
+	
+
