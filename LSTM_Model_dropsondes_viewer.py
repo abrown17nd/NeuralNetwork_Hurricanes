@@ -10,7 +10,7 @@ from sklearn.preprocessing import StandardScaler
 import os
 
 
-# ----- Define Model -----
+# ----- Define Model ----- #
 class LSTMModel(nn.Module):
     def __init__(self, input_size, hidden_size=64, num_layers=2):
         super(LSTMModel, self).__init__()
@@ -21,7 +21,7 @@ class LSTMModel(nn.Module):
         lstm_out, _ = self.lstm(x)
         return self.fc(lstm_out[:, -1, :])
 
-# ----- Setup -----
+# ----- Setup ----- #
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Load JSON configurations
@@ -52,13 +52,16 @@ for col in feature_columns:
 sample_group = df_original[df_original["header_id"] == random_header_id].sort_values("z_m_10_meter_bin", ascending = False)
 
 print("sample_group ", sample_group.head(20))
-# ----- Evaluate Each Model -----
+
+
+# ----- Evaluate Each Model ----- #
+
 generated_sequences_dict = []
 debug_on = True
 for config_name, config in model_configs.items():
     sequence_length = config["sequence_length"]
     hidden_size = config["hidden_size"]
-    model_path = os.path.join("best_models", config["model_path"])
+    model_path = os.path.join("MultipleRuns/attempt_6/best_models", config["model_path"])
 
     # Instantiate and load model
     model = LSTMModel(input_size=len(feature_columns) - 1, hidden_size=hidden_size).to(device)
@@ -112,32 +115,11 @@ for config_name, config in model_configs.items():
             "sequence_length": sequence_length,
             "hidden_size": hidden_size
         })
-#
-# # ----- Plot -----
-actual_ws = sample_group_for_plot["ws_m_s"].values
-actual_z_m = sample_group_for_plot["z_m_10_meter_bin"].values
-#
-# plt.figure(figsize=(10, 6))
-# plt.plot(actual_ws, actual_z_m, 'bo-', label="Actual Data")
-# for item in generated_sequences_dict:
-#     plt.plot(item["generated_ws"], item["generated_z_m"], label=f"Generated seq_len {item['sequence_length']} hid_size {item['hidden_size']}")
-#
-# plt.xlabel("ws_m_s")
-# plt.ylabel("z_m_10_meter_bin")
-# plt.legend()
-# plt.title(f"Generated Sequence vs Actual for Header ID {random_header_id}")
-# plt.grid(True)
-#
-#
-# i = 0
-# while os.path.exists(f"predicted_and_actual{random_header_id}_debug_%s.jpg" % i):
-#     i += 1
-#
-# plt.savefig(f"predicted_and_actual{random_header_id}_debug_%s.jpg" % i)
-# plt.show()
 
 
 from collections import defaultdict
+
+# ----- Plotting the predicted sequences for each model type ----- #
 
 # Group sequences by sequence_length
 grouped_by_sequence_length = defaultdict(list)
